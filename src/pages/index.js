@@ -1,0 +1,12 @@
+export { default as Home } from './Home/Home';
+export { default as About } from './About/About';
+export { default as Products } from './Products/Products';
+export { default as Inkjet } from './Inkjet/Inkjet';
+export { default as Thermal } from './Thermal/Thermal';
+export { default as Applictions } from './Applications/Applications';
+export { default as Ewaste } from './Ewaste/Ewaste';
+export { default as Contact } from './Contact/Contact'
+export { default as Fiber } from './Fiber/Fiber';
+export { default as Co2 } from './Co2/Co2';
+export { default as Desktop } from './Desktop/Desktop';
+export { default as Uv } from './Uv/Uv';

@@ -1,0 +1,116 @@
+.slider__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 248, 248);
+    transition: all 2s ease;
+  }
+  .left__icon__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    opacity: 0.7;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.747);
+    transition: all 0.5s ease;
+    position: absolute;
+    justify-self: flex-start;
+    padding: 10px;
+    left: 10px;
+  }
+  .left__icon__container:hover{
+    opacity: 1;
+  }
+  .image__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all 2s ease;
+    background-color: #00000080;
+    background-blend-mode: overlay;
+    height: 100%;
+    
+  }
+  .image__container__hidden{
+    display: none;  
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  .img__title{
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #f31f25;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-weight:900;  
+  }
+  .slide__image{
+    height: 500px;
+  }
+  .img__info{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 4px 2px 2px  rgba(255, 0, 0, 0.781);
+    font-weight: 900;
+    font-size: 90px;  
+  }
+  .right__icon__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.7;
+    height: 50px;
+    width: 50px;
+    transition: all 0.5s ease;
+    box-shadow: -2px 0px 2px 2px rgba(0, 0, 0, 0.747);
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+  }
+  .right__icon__container:hover{
+    opacity: 1;
+  }
+  
+  /* -------------------- Media Query starts ------------------------- */
+  @media only screen and (max-width: 320px) {
+    .right__icon__container{
+      right:10px;
+    }
+    .img__title{
+        font-size: 65px;
+        text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 550px){
+    .left__icon__container{
+      left:0px
+    }
+    .right__icon__container{
+      right:0px;
+    }
+    .img__title{
+      font-size: 70px;
+      text-align: center;
+    }
+    .img__info{
+      font-size: 70px;
+    }
+  }
+  @media only screen and (min-width: 551px) and (max-width:768px){
+    .img__title{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,199 @@
+.product__container{
+    align-self: center;
+    margin: 4rem 0;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.inkjet__container{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 4rem 3fr 4fr 4rem;
+    grid-row: auto;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.product__heading{
+    font-size: var(--heading-text);
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #c0c0c0;
+    margin-bottom: 2rem;
+}
+.img__heading__container{
+    grid-column: 2/4;
+    grid-row:1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #5b5b5b;
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 0.5rem;
+}
+.sample__img__heading{
+    grid-column: 1/2;
+    font-size: var(--title-text);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.inkjet__re200{
+    color: #E21D25;
+}
+.product__broucher__btn{
+    grid-column: 2/3;
+    width: 50%;
+    padding: 0.5rem 0;
+    justify-self: flex-end;
+    font-size: 16px;
+    color:#E21D25;
+    font-weight: 500;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    border:2px solid #E21D25;
+    /* transition: all .3s ease-in; */
+}
+.product__broucher__btn:hover{
+    background-color: #E21D25;
+    color: #ffffff;
+    transition: all .3s ease-in;
+}
+.inkjet__img__container{
+    grid-column: 2/3;
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    /* border: 2px solid #ebebeb; */
+}
+.inkjet__main__img{
+   justify-self: center;
+    height: 100%  
+}
+.button__container{
+    justify-self: center;
+    margin: 2rem 0;
+}
+.font__sample{
+    justify-self: center;
+    /* height: 100%; */
+    width: 100%;
+}
+/* ----------------- Features ------------------- */
+
+.features__container{
+    grid-column: 3/4;
+    height: 100%;
+    color: #000000;
+    /* border:1px solid #d6d6d6; */
+    justify-self: center;
+}
+.features__container ul{
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+}
+.features__container ul li{
+    line-height: 2rem;
+    color: #000000;
+    font-size: var(--text);
+}
+.features__heading{
+    padding: 2rem 0 1rem 1rem;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* margin: 0.5rem 0; */
+    text-shadow: 2px 2px 4px #bdbdbda1;
+}
+.feature__sub__heading{
+    color: #000000;
+    font-size: var(--subtitle-text);
+    text-transform: uppercase;
+    font-weight: 600;
+    /* margin-left: 1.2rem; */
+    /* padding: 0.3rem 0; */
+}
+.features__container p{
+    color: #000000;
+}
+
+/* ---------------------- Media Query --------------------- */
+
+@media only screen and (max-width: 550px) {
+    .product__container{
+        padding-top: 0rem;
+        display: grid;
+        justify-content: center;
+    }
+    .inkjet__container{
+        width: 100vw;
+        grid-row: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .product__heading{
+        display: none;
+    }
+    .inkjet__img__container{
+        grid-column: 2/4;
+        justify-content: center;
+    }
+    .inkjet__main__img{
+       justify-self: center;
+    }
+    .button__container{
+        justify-self: center;
+        margin: 2rem 0;
+    }
+    .sample__container{
+    justify-self: center;
+    width: 80%;
+    }
+    .font__sample{
+        height: 80%;
+        width: 100%;
+    }
+    .features__container{
+        grid-column: 1/5;
+        height: 100%;
+        color: #000000;
+        justify-self: center;
+        margin: 0 2rem;
+    }
+    .features__heading{
+        font-size: var(--subtitle-text);
+        text-align: flex-start;
+    }
+}
+
+@media only screen and (min-width:551px) and (max-width:768px) {
+    .inkjet__container{
+        justify-self: center;
+        width: 90vw;
+    }
+    .inkjet__img__container{
+        grid-column: 2/4;
+    }
+    .features__container{
+        grid-column: 2/4;
+        height: 100%;
+        color: #000000;
+        justify-self: center;
+    }
+}
+@media only screen and (min-width:769px) and (max-width: 1024px){
+    .inkjet__container{
+        width: 100vw;
+    }
+    .features__container{
+        margin-left: 2rem;
+    }
+
+}
+
+

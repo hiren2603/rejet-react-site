@@ -1,0 +1,205 @@
+.product__container{
+    align-self: center;
+    margin: 4rem 0;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.about__container{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 4rem 3fr 4fr 4rem;
+    gap: 1rem;
+    align-items:center;
+    justify-content: center;
+    justify-self: center;
+}
+.title__container{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    color: #5b5b5b;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 0.5rem;
+}
+.page__title{
+    color: #000000;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #5b5b5b70;
+    font-size: var(--heading-text)
+}
+.about__content__container{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: flex-start;
+}
+.about__content{
+    grid-column: 3/4;
+    text-align: justify;
+    color: #000000;
+    line-height: 2;
+    font-size: var(--text);
+}
+.about__content b{
+    text-transform: uppercase;
+    color: #F31F25;
+    font-weight: 500;
+}
+.about__image__container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-items: center;
+    justify-content:center;
+    /* height: 100%;
+    width: 100%; */
+}
+.ce__img{
+    justify-self: center;
+    width: auto;
+    max-height: 500px;
+    box-shadow: 2px 2px 2px 10px #2F377A;
+}
+.mi__img{
+    padding-top: 2rem;
+    width: 50%;
+}
+.vision__mission__container{
+    width: 90vw;
+    display: grid;
+    gap: 1rem;   
+    grid-template-columns: 4rem 3fr 3fr 4rem;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+.vision__mission__heading{
+    margin-top: 4rem;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.vision__mission__title{
+    grid-column: 2/4;
+    color: #000000;
+    font-size: var(--heading-text);
+    text-shadow: 2px 2px 2px #9c9c9c;
+}
+.vision__devider{
+    height: 4px;
+    width: 3rem;
+    background-color: #000;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    position: relative;
+    right: 10px;
+}
+
+
+/* ------------------------ Media Query ---------------- */
+@media only screen and (max-width:550px){
+    .about__container{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 2rem 3fr 4fr 2rem;
+        row-gap: 2rem;
+        align-items:center;
+        justify-content: center;
+        justify-self: center;
+    }
+    .about__image__container{
+        grid-row: 4/5;
+        grid-column: 2/4;
+    }
+    .ce__img{
+        justify-self: center;
+        width: 100%;
+    }
+    .mi__img{
+        padding-top: 2rem;
+        width: 100%;
+    }
+    .about__content__container{
+        grid-row: 2/4;
+        grid-column: 2/4;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .title__container{
+        grid-column: 2/4;
+        justify-self: center;
+    }
+    .vision__mission__container{
+        width: 100vw;
+        grid-template-columns:2rem 3fr 3fr 2rem;
+        justify-self: center;
+    }
+    .vision__mission__heading{
+        grid-column: 1/5;
+        justify-self: center;
+    }
+    
+}
+
+@media only screen and (min-width: 551px) and (max-width:768px){
+    .about__content__container{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        height: 100%;
+    }
+    .about__image__container{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2/4;
+        grid-row: 3/4;
+        justify-content: center;
+        align-items: center;
+    }
+    .ce__img{
+        margin: 2rem 0;
+        height: 100%;
+        width: 100%;
+    }
+    .mi__img{
+        height: 100%;
+        width: 100%;
+    }
+    .vision__mission__container{
+        grid-template-columns:2rem 3fr 3fr 2rem;
+    }
+    .vision__mission__heading{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .about__container{
+        width: 100%;
+        gap: 2rem;
+    }
+   .about__image__container{
+       grid-column: 2/4;
+       grid-row:3/4;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       margin: 4rem 0;
+   }
+   .about__content__container{
+       grid-column: 2/4;
+       grid-row: 2/3;
+   }
+   .vision__mission__container{
+    grid-template-columns:2rem 3fr 3fr 2rem;
+    justify-self: center;
+   }
+   .vision__mission__heading{
+       grid-column: 2/4;
+   }
+
+}
+

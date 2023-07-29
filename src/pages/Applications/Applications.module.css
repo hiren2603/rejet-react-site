@@ -1,0 +1,17 @@
+.video__wraper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+    width: 80%;
+    max-width: 80%;
+}
+.video__gallery__title{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: var(--heading-text);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #d1d1d1;
+    font-weight: 500;
+}

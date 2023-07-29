@@ -1,0 +1,202 @@
+.product__container{
+    align-self: center;
+    margin: 4rem 0;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.product__heading{
+    font-size: var(--heading-text);
+    text-transform: uppercase;
+    align-self: center;
+    justify-self: center;
+    color: #000000;
+    text-shadow: 2px 2px 2px #c0c0c0;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.desktop__laser__container{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 4rem 4fr 3fr 4rem;
+    grid-template-rows: auto;
+    gap: 1rem; 
+    align-items: flex-start;
+    justify-content: center;
+}
+.desktop__laser__img__container{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: grid;
+    row-gap: 1rem;
+    /* justify-content: flex-start;
+    align-items: center; */
+}
+.desktop__laser__img{
+    justify-self: center;
+}
+.button__container{
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    margin: 2rem 0;
+}
+.sample__container{
+    grid-row: 3/4;
+    align-self: flex-end;
+    justify-self: center;
+}
+.desktop__model__heading{
+    font-size: var(--title-text);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-weight: 600;
+}
+.desktop__applicable__products{
+    grid-row:3/4;
+    color: #000000;
+    margin-top: 2rem;
+}
+.desktop__applicable__products li{
+  line-height: 1.8rem;
+}
+.desktop__laser__info__container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: #000000;
+}
+.desktop__laser__model__heading{
+    font-size: var(--title-text);
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+}
+.desktop__laser__model >li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 1.8rem;
+}
+.desktop__laser__model >li >b{
+    font-weight: 500;
+}
+
+.desktop__features__container{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    display: grid;
+    flex-wrap: wrap;
+    color: #000000;
+    line-height: 1.8rem;
+    margin-top: 2rem;
+}
+.desktop__features__container li{
+    margin: 0.3rem 0;
+}
+.features__heading{
+    font-size: var(--title-text);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 550px){
+    .product__heading{
+        display: none;
+    }
+    .desktop__laser__container{
+        width: 100vw;
+        justify-content: center;
+    }
+    .desktop__laser__img__container{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        justify-content: center;
+        justify-self: center;
+    }
+    .sample__container{
+        grid-column: 1/5;
+        grid-row: 3/4;
+        justify-self: center;
+    }
+    .sample__container > img{
+        width: 300px;
+    }
+    .desktop__applicable__products{
+        grid-column: 1/5;        
+    }
+    .desktop__laser__model__heading{
+        font-size: var(--subtitle-text);
+    }
+    .desktop__laser__info__container{
+        grid-column: 1/5;
+        grid-row: 4/5;
+        margin: 0 2rem;
+    }
+    .desktop__features__container{
+        grid-column: 1/5;
+        grid-row: 5/6;
+        display: grid;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px){
+    .desktop__laser__container{
+        width: 90vw;
+    }
+    .desktop__laser__img__container{
+        /* justify-self: center; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column: 2/4;
+        grid-row: 2/3;
+        /* justify-content: center; */
+    }
+    .desktop__laser__img{
+        justify-self: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .button__container{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .sample__container{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        justify-self: flex-start;
+        justify-content: flex-start;
+    }
+    .desktop__applicable__products{
+        justify-self: flex-start;
+        grid-column: 1/3;
+        grid-row: 4/5;
+        margin-top: 2rem;
+    }
+    .desktop__laser__info__container{
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+    .desktop__features__container{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .desktop__laser__container{
+        width: 100vw;
+    }
+    .desktop__laser__img__container{
+        justify-content: flex-end;
+    }
+    .desktop__applicable__products{
+        margin-top: 2rem;
+    }
+    .desktop__laser__info__container{
+        grid-column: 2/3;
+    }
+
+}

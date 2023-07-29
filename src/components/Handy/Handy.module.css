@@ -1,0 +1,104 @@
+.product__container{
+    margin-top: 5rem;
+    display: grid;
+    justify-content: center;
+}
+.handy__container{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 4rem 3fr 4fr 4rem;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.handy__info__container{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: grid;
+    justify-content: flex-start;
+    color: #000000;
+}
+.handy__model{
+    padding: 1rem 0;
+    /* border-bottom: 1px solid #c7c7c7; */
+}
+.handy__model__heading{
+    font-size: var(--title-text);
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-weight: 500;
+    color: #000000;
+}
+.handy__model >li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 1.8rem;
+}
+.handy__model >li >b{
+    font-weight: 500;
+}
+.handy__features__container > li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 1.8rem;
+   
+}
+.handy__features__container > li>b{
+    font-weight: 500;
+}
+.handy__img__container{
+    grid-column: 2/3;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    /* height: 60%; */
+}
+.handy__img{
+    justify-self: center;
+    height: 70%;
+}
+.applicable__products__container{
+    color: #000000;
+}
+.applicable__products__container li{
+    line-height: 1.8rem;
+}
+
+/* ---------------- Media Query ------------------ */
+
+@media only screen and (max-width:550px){
+    .handy__container{
+        width: 100vw;
+        align-self: center;
+    }
+    .handy__img__container{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .handy__info__container{
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+}
+
+@media only screen and (min-width:551px) and (max-width:768px){
+    .handy__container{
+        width: 90vw;
+        align-self: center;
+    }
+    .handy__img__container{
+        grid-column: 2/5;
+        grid-row: 2/3;
+        gap: 2rem;
+    }
+    .applicable__products__container{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        justify-content: flex-end;
+    }
+    .handy__info__container{
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+}

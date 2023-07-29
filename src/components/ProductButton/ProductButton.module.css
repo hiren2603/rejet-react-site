@@ -1,0 +1,19 @@
+.product__button{
+    margin-bottom: 1rem;
+    color: #E31E25;
+    padding: 0.5rem 1rem;
+    outline: none;
+    cursor: pointer;
+    width: 170px;
+    font-size: 18px;
+    border: 1px solid #E61D25;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #E31E25;
+    transition: ease-out 0.3s;
+    text-align: center;
+    margin: 2rem 0;
+}
+.product__button:hover{
+    box-shadow: inset 168px 0 0 0 #E31E25;
+    color: #ffffff;
+}
